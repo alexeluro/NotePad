@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="NOTEPAD_COLOR1">#FFFFD9</color>
+    <color name="darkToolBar">#333333</color>
+    <color name="lighterStatusBar">#777777</color>
+</resources>
