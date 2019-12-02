@@ -49,7 +49,7 @@ public class NoteEditText extends AppCompatEditText {
         int paperWidth = ((View)this.getParent()).getWidth();
         int baseLine = getLineBounds(0, rect);
         int lineWidth = getWidth();
-        int marginLine = getLineBounds(0, rect);
+//        int marginLine = getLineBounds(0, rect);
 
 //       For drawing the Vertical lines
 //        for(int i = 0; i < noOfLines; i++){
