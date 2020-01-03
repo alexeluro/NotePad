@@ -25,10 +25,14 @@ public class NoteTable implements Parcelable {
     @ColumnInfo(name = "timestamp")
     private String timestamp;
 
-    public NoteTable(String title, String body, String timestamp){
+    @ColumnInfo(name = "category")
+    private String category;
+
+    public NoteTable(String title, String body, String timestamp, String category){
         this.title = title;
         this.body = body;
         this.timestamp = timestamp;
+        this.category = category;
     }
 
     @Ignore
@@ -40,6 +44,7 @@ public class NoteTable implements Parcelable {
         title = in.readString();
         body = in.readString();
         timestamp = in.readString();
+        category = in.readString();
     }
 
     public static final Creator<NoteTable> CREATOR = new Creator<NoteTable>() {
@@ -86,6 +91,15 @@ public class NoteTable implements Parcelable {
         this.timestamp = timestamp;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+
     @Override
     public String toString() {
         return "NoteTable{" +
@@ -93,6 +107,7 @@ public class NoteTable implements Parcelable {
                 ", title='" + title + '\'' +
                 ", body='" + body + '\'' +
                 ", timestamp='" + timestamp + '\'' +
+                ", category='" + category + '\'' +
                 '}';
     }
 
@@ -107,5 +122,6 @@ public class NoteTable implements Parcelable {
         parcel.writeString(title);
         parcel.writeString(body);
         parcel.writeString(timestamp);
+        parcel.writeString(category);
     }
 }

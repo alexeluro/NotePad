@@ -36,4 +36,5 @@ dependencies {
     implementation "android.arch.lifecycle:extensions:$mvvm_version"
     annotationProcessor "android.arch.lifecycle:compiler:$mvvm_version"
     implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
 }
